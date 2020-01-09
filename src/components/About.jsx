@@ -52,6 +52,13 @@ const AboutLocation = styled.p`
   font-weight: 400;
 `;
 
+const AboutPhone = styled.p`
+  font-family: 'Montserrat', sans-serif;
+  color: #3E373A;
+  font-size: 1em;
+  font-weight: 400;
+`;
+
 const About = ({ avatar, name, profession, bio, address, social }) => (
   <AboutStyle>
     <div className="About-container">
@@ -71,6 +78,9 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
       </div>
       <div className="About-location">
         <AboutLocation>{address}</AboutLocation>
+      </div>
+      <div className="About-location">
+        <AboutPhone>{phone}</AboutPhone>
       </div>
       <div className="About-social">
         <Social social={social} />
